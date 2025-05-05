@@ -2,6 +2,7 @@ import re
 import streamlit as st
 from banking_rag import get_rag_answer
 from banking_intent import predict_intent
+
 st.set_page_config(page_title="SBI Banking Assistant", page_icon="🏦", layout="centered")
 st.markdown(
     """
@@ -46,6 +47,7 @@ st.markdown(
 st.markdown("<h1 style='text-align: center;'>🏦SBI Banking Assistant</h1>", unsafe_allow_html=True)
 st.markdown("<h4 style='text-align: center; '>Your trusted AI partner for SBI banking queries</h4>", unsafe_allow_html=True)
 st.write("---")
+
 user_input = st.text_input("Enter your query:")
 if user_input:
     with st.spinner("Generating answer..."):
@@ -59,6 +61,7 @@ if user_input:
         else:
             st.error(label)
             st.error("Sorry, I can assist only with banking-related queries. Please ask a banking-related question.")
+            
 st.markdown(
     """
     <hr style='border: 0.5px solid #6c757d;'>
