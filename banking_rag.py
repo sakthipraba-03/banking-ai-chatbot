@@ -17,7 +17,7 @@ llm = Ollama(model="deepseek-r1")
 # define the prompt to feed for llm
 prompt = """  
 1. Use ONLY the context below.
-2.Answer the question concisely in **no more than two sentences**.
+2. Answer the question concisely in **no more than two sentences**.
 3. If the answer is unknown or information is unavailable, say 'I don't know.'
 Context: {context}  
 Question: {question}  
