@@ -19,7 +19,7 @@ prompt = """
 1. Rely strictly on the context provided below.
 2. Respond clearly in no more than two sentences.
 3. Do not refer to the context explicitly in your answer.
-4. If the answer is not available, respond with: 'I don't know, I am here to assist with SBI Bank.'
+4. If the answer is not available, respond with: 'I don't know', please ask different question'.
 Context: {context}  
 Question: {question}  
 Answer:  
